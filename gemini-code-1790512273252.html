@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas Poet Fishing - Toko Alat Pancing & Servis Joran</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ocean: {
+                            DEFAULT: '#005f73',
+                            dark: '#0a2342',
+                            light: '#0084a5',
+                            accent: '#00b4d8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-ocean-dark/90 backdrop-blur-md z-50 border-b border-ocean-light/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <i class="fa-solid font-bold fa-fish-fins text-ocean-accent text-3xl"></i>
+                <span class="font-extrabold text-xl tracking-wider text-white uppercase">Mas Poet Fishing</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="#beranda" class="hover:text-ocean-accent transition">Beranda</a>
+                <a href="#layanan" class="hover:text-ocean-accent transition">Servis Joran</a>
+                <a href="#nelayan" class="hover:text-ocean-accent transition">Kebutuhan Nelayan</a>
+                <a href="#lure" class="hover:text-ocean-accent transition">Umpan / Lure</a>
+                <a href="#aksesoris" class="hover:text-ocean-accent transition">Aksesoris</a>
+                <a href="#kontak" class="hover:text-ocean-accent transition">Kontak</a>
+            </div>
+            <a href="https://wa.me/6285820327779" target="_blank" class="bg-ocean-accent hover:bg-ocean-light text-ocean-dark font-bold px-5 py-2.5 rounded-full transition shadow-lg flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- BERANDA (HERO SECTION WITH COVER IMAGE & BLUE SEA THEME) -->
+    <section id="beranda" class="relative pt-20 min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Overlay Biru Laut -->
+        <div class="absolute inset-0 bg-gradient-to-r from-ocean-dark/95 via-ocean/80 to-ocean-dark/90 z-10"></div>
+        <img src="https://drive.google.com/thumbnail?id=1qrMAfH3OgTyCELca4lVOHLmWg76wy3MF&sz=w1920" alt="Mas Poet Fishing Cover" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="relative z-20 text-center max-w-4xl px-4 py-20">
+            <span class="inline-block px-4 py-1.5 bg-ocean-accent/20 border border-ocean-accent text-ocean-accent rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
+                Pusat Peralatan Pancing & Servis Profesional
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight mb-6 uppercase">
+                MAS POET FISHING
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
+                Lengkap, Berkualitas, dan Terpercaya. Menyediakan segala perlengkapan pancing, kebutuhan nelayan, umpan berkualitas, serta layanan servis joran profesional.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#lure" class="px-8 py-4 bg-ocean-accent hover:bg-ocean-light text-ocean-dark font-bold rounded-lg transition shadow-lg">
+                    Lihat Produk & Umpan
+                </a>
+                <a href="#layanan" class="px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:text-ocean-dark text-white font-bold rounded-lg transition">
+                    Layanan Servis Joran
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMASI UTAMA & JAM BUKA (KETERANGAN 1) -->
+    <section id="kontak" class="py-16 bg-slate-800 border-y border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <!-- Lokasi -->
+                <div class="flex flex-col items-center md:items-start p-6 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                    <i class="fa-solid fa-location-dot text-ocean-accent text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Lokasi Toko</h3>
+                    <p class="text-slate-400 text-sm mb-4">Temukan toko kami dengan mudah melalui Google Maps.</p>
+                    <a href="https://maps.app.goo.gl/xCkYBcNsFEv7jyBfA?g_st=ac" target="_blank" class="mt-auto inline-flex items-center gap-2 text-ocean-accent font-semibold hover:underline">
+                        Buka Petunjuk Arah <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Jam Buka -->
+                <div class="flex flex-col items-center md:items-start p-6 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                    <i class="fa-solid fa-clock text-ocean-accent text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Jam Operasional</h3>
+                    <p class="text-slate-300 text-sm font-semibold">Senin - Sabtu</p>
+                    <p class="text-slate-400 text-sm">Pukul 08.00 Pagi - 23.00 Malam</p>
+                    <span class="mt-auto text-xs px-2.5 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full">Buka Setiap Hari Kerja</span>
+                </div>
+
+                <!-- Telepon -->
+                <div class="flex flex-col items-center md:items-start p-6 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                    <i class="fa-solid fa-phone text-ocean-accent text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Nomor Telepon / WA</h3>
+                    <p class="text-slate-400 text-sm mb-4">085820327779</p>
+                    <a href="https://wa.me/6285820327779" target="_blank" class="mt-auto inline-flex items-center gap-2 text-ocean-accent font-semibold hover:underline">
+                        Hubungi via WhatsApp <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Sosial Media -->
+                <div class="flex flex-col items-center md:items-start p-6 bg-slate-900/50 rounded-xl border border-slate-700/50">
+                    <i class="fa-brands fa-tiktok text-ocean-accent text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">TikTok Resmi</h3>
+                    <p class="text-slate-400 text-sm mb-4">Lihat ragam konten & riviu produk terbaru kami.</p>
+                    <a href="https://www.tiktok.com/@mas.poet.fishing?_r=1&_t=ZS-9A57qFYpp0X" target="_blank" class="mt-auto inline-flex items-center gap-2 text-ocean-accent font-semibold hover:underline">
+                        Ikuti @mas.poet.fishing <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE JORAN PANCING (KETERANGAN 2) -->
+    <section id="layanan" class="py-20 relative bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Overlay Foto Perlengkap -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-ocean-accent to-ocean rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="https://drive.google.com/thumbnail?id=1FpibgHuaNdOVIPEN3TFaaiGWu3-FnW-Y&sz=w1000" alt="Service Joran Pancing" class="w-full h-[400px] object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="px-3 py-1 bg-ocean-accent text-ocean-dark font-bold text-xs uppercase rounded-md mb-2 inline-block">Galeri Pengerjaan</span>
+                            <h4 class="text-xl font-bold text-white">Servis & Kustomisasi Joran</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Konten Layanan -->
+                <div>
+                    <span class="text-ocean-accent font-semibold uppercase tracking-wider text-sm">Bengkel Pancing Profesional</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">Service Joran Pancing</h2>
+                    <p class="text-slate-300 mb-8">Joran pancing kesayangan Anda rusak atau ingin tampil lebih gaya? Kami melayani perbaikan dan modifikasi joran dengan hasil presisi dan rapi.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Joran Patah</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Ganti Ring Guide</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Ganti Reel Seat</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Ganti Busa EVA</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Restorasi Joran</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-slate-800/60 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-circle-check text-ocean-accent mr-3 text-lg"></i>
+                            <span class="text-slate-200 font-medium">Custom Joran</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KEBUTUHAN NELAYAN + 5 OVERLAY GAMBAR (KETERANGAN 3) -->
+    <section id="nelayan" class="py-20 bg-slate-850 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-accent font-semibold uppercase tracking-wider text-sm">Peralatan Bahari & Kelautan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Menyediakan Berbagai Kebutuhan Nelayan</h2>
+                <p class="text-slate-300 mt-4">Solusi perlengkapan melaut terlengkap: Nylon / Damyl, Mata Kail, Timah Pemberat, Jaring, Kawat, dan perlengkapan tangkap lainnya.</p>
+            </div>
+
+            <!-- 5 Overlay Card Ilustrasi Browser -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1: Nylon / Damyl -->
+                <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:border-ocean-accent transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Nylon Damyl" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-ocean-dark/40 group-hover:bg-ocean-dark/10 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Nylon / Damyl</h3>
+                        <p class="text-slate-400 text-sm">Sedia berbagai ukuran Senar Nylon/Damyl ekstra kuat tahan gesekan untuk melaut.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Mata Kail -->
+                <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:border-ocean-accent transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1527016021513-b09758b777bd?auto=format&fit=crop&w=600&q=80" alt="Mata Kail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-ocean-dark/40 group-hover:bg-ocean-dark/10 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Mata Kail</h3>
+                        <p class="text-slate-400 text-sm">Pilihan mata kail tajam dan anti karat dalam berbagai nomor dan bentuk untuk nelayan.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Timah Pemberat -->
+                <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:border-ocean-accent transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Timah Pemberat" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-ocean-dark/40 group-hover:bg-ocean-dark/10 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Timah Pemberat</h3>
+                        <p class="text-slate-400 text-sm">Beragam berat dan tipe timah melaut untuk menjaga posisi umpan stabil di arus air.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Jaring Tangkap -->
+                <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:border-ocean-accent transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80" alt="Jaring" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-ocean-dark/40 group-hover:bg-ocean-dark/10 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Jaring Nelayan</h3>
+                        <p class="text-slate-400 text-sm">Jaring berkualitas tinggi dengan kekuatan tinggi untuk hasil tangkapan yang optimal.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Kawat & Aksesoris Nelayan -->
+                <div class="group relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:border-ocean-accent transition duration-300 sm:col-span-2 lg:col-span-1">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="Kawat Nelayan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-ocean-dark/40 group-hover:bg-ocean-dark/10 transition"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Kawat Stainless & Lainnya</h3>
+                        <p class="text-slate-400 text-sm">Kawat stainless anti korosi untuk pembuatan rintisan dan ikatan laut dalam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UMPAN / LURE (KETERANGAN 4) -->
+    <section id="lure" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-accent font-semibold uppercase tracking-wider text-sm">Koleksi Umpan Pilihan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Variasi Lure / Umpan Buatan</h2>
+                <p class="text-slate-300 mt-4">Kami menyediakan berbagai macam tipe Lure ternama seperti Metal Jig, Minnow, Popper, dan Soft Frog untuk segala kondisi perairan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Foto Lure 1 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-ocean-accent transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://drive.google.com/thumbnail?id=1J-TOY8vl8mbY91xrbOPksDdGiA0BJMMh&sz=w800" alt="Koleksi Lure 1" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Metal Jig & Minnow</h3>
+                            <p class="text-slate-400 text-sm">Desain aerodinamis dengan aksi renang yang menarik perhatian ikan predator laut dan sungai.</p>
+                        </div>
+                        <span class="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-ocean-accent">Stok Lengkap</span>
+                    </div>
+                </div>
+
+                <!-- Foto Lure 2 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-ocean-accent transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://drive.google.com/thumbnail?id=1GRicmtP0386KVBKFl_X4zxfiKuBpCdJU&sz=w800" alt="Koleksi Lure 2" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Popper & Top Water</h3>
+                            <p class="text-slate-400 text-sm">Menghasilkan cipratan air (pop) luar biasa untuk memancing sambaran ikan di permukaan.</p>
+                        </div>
+                        <span class="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-ocean-accent">Stok Lengkap</span>
+                    </div>
+                </div>
+
+                <!-- Foto Lure 3 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-ocean-accent transition duration-300 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://drive.google.com/thumbnail?id=1-qTU1cYRq8eh-YwX77QCuY7n99UlHkDM&sz=w800" alt="Koleksi Lure 3" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Soft Frog & Hard Baits</h3>
+                            <p class="text-slate-400 text-sm">Soft Frog lentur anti sangkut untuk casting Gabus/Toman serta variasi umpan buatan lainnya.</p>
+                        </div>
+                        <span class="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-ocean-accent">Stok Lengkap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AKSESORIS PANCING (KETERANGAN 5) -->
+    <section id="aksesoris" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ocean-accent font-semibold uppercase tracking-wider text-sm">Perlengkapan Tambahan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Aksesoris Pancing Terlengkap</h2>
+                <p class="text-slate-300 mt-4">Sedia Benang PE, Leader, Assist Hook, Swivel, Snap, dan berbagai peralatan pendukung aktivitas mancing Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Aksesoris Foto 1 -->
+                <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://drive.google.com/thumbnail?id=1TUynS5lYOnPwX9PpvxZ4OuZf495w5lBR&sz=w800" alt="Aksesoris Pancing 1" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Benang PE Premium</h3>
+                        <p class="text-slate-400 text-sm">Benang PE rajutan halus berdaya tahan tinggi, cocok untuk casting, jigging, maupun galatama.</p>
+                    </div>
+                </div>
+
+                <!-- Aksesoris Foto 2 -->
+                <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://drive.google.com/thumbnail?id=1gSuOySlsHuOYye3_A8cTgI1CTdBlK7Dg&sz=w800" alt="Aksesoris Pancing 2" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Leader & Shockleader</h3>
+                        <p class="text-slate-400 text-sm">Senar Leader fluorocarbon transparan dan tahan gesekan karang / gigi ikan tajam.</p>
+                    </div>
+                </div>
+
+                <!-- Aksesoris Foto 3 -->
+                <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://drive.google.com/thumbnail?id=1hXdsOBA01QNNtFqSTSzJ5HlH2OSqm1zD&sz=w800" alt="Aksesoris Pancing 3" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Assist Hook & Terminal Tackle</h3>
+                        <p class="text-slate-400 text-sm">Assist hook siap pakai, kili-kili (swivel), snap, split ring, dan aksesoris peranti pancing lainnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-ocean-dark border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-fish-fins text-ocean-accent text-2xl"></i>
+                <span class="text-white font-bold text-lg uppercase tracking-wider">Mas Poet Fishing</span>
+            </div>
+            <div class="text-sm text-center">
+                &copy; 2026 Mas Poet Fishing. All rights reserved.
+            </div>
+            <div class="flex space-x-6 text-xl">
+                <a href="https://www.tiktok.com/@mas.poet.fishing?_r=1&_t=ZS-9A57qFYpp0X" target="_blank" class="hover:text-ocean-accent transition"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/6285820327779" target="_blank" class="hover:text-ocean-accent transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/xCkYBcNsFEv7jyBfA?g_st=ac" target="_blank" class="hover:text-ocean-accent transition"><i class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
